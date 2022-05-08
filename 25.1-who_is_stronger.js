@@ -17,9 +17,10 @@ function whoIsStronger(getStrength) {
   } else return "You are stronger";
 }
 
-// whoIsStronger(hero.getStrength);
+
 const getStrength=hero.getStrength.bind(hero);
 whoIsStronger(getStrength);
+// whoIsStronger(hero.getStrength);
 
 // 1.When the getStrength is passed to 'whoIsString' as a callback, its 'this' is lost, so it's like invoking getStrength on the window.
 // this.health is undefined, so the getStrength will return window.power which is also undefined.
